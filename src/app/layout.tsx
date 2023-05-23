@@ -19,11 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="ko">
-			<Jotai>
-				<body className="max-w-[50rem] mx-auto">
+			<body className="max-w-[50rem] mx-auto">
+				<Jotai>
 					<ReactQuery>{children}</ReactQuery>
-				</body>
-			</Jotai>
+				</Jotai>
+			</body>
 		</html>
 	);
 }
