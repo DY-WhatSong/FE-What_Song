@@ -6,16 +6,16 @@ import { roomApis } from '../service/room';
 export default async function HomePage() {
 	// const userInfo = useAtomValue(UserInfoAtom);
 	const memberSeq = 3;
-	const allRooms = await roomApis.getAllRooms();
-	const userRooms = await roomApis.getUserRooms(memberSeq);
+	// const allRooms = await roomApis.getAllRooms();
+	// const userRooms = await roomApis.getUserRooms(memberSeq);
 	return (
 		<>
 			<h2 className="text-3xl font-bold mx-5">친구들의 방</h2>
-			<MusicCarousel rooms={allRooms} />
+			{/* <MusicCarousel rooms={allRooms} /> */}
 			<h2 className="text-3xl font-bold mx-5 mt-2">내가 생성한 방</h2>
-			<MusicCarousel rooms={userRooms} />
+			{/* <MusicCarousel rooms={userRooms} /> */}
 			<h2 className="text-3xl font-bold mx-5 mt-2">최근 방문 목록</h2>
-			<MusicCarousel rooms={allRooms} />
+			{/* <MusicCarousel rooms={allRooms} /> */}
 		</>
 	);
 }
