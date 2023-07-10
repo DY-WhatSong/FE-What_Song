@@ -33,6 +33,7 @@ export default function EmojiBar() {
 			}, 2000);
 			return () => clearTimeout(timer);
 		}
+		return undefined;
 	}, [showEmoji]);
 
 	const handleEmojiClick = (emojiChange: string) => {

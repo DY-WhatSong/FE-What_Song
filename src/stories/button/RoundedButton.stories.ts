@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import RoundedButton from '../../components/button/RoundedButton';
 
 const meta: Meta<typeof RoundedButton> = {
-	title: 'Example/RoundedButton',
+	title: 'Button/RoundedButton',
 	component: RoundedButton,
 	tags: ['autodocs'],
 };

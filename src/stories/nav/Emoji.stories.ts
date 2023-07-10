@@ -1,14 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Button from '../../components/button/Button';
+import EmojiBar from '../../components/bar/EmojiBar';
 
 const meta: Meta<typeof Button> = {
-	title: 'button/Button',
-	component: Button,
-	parameters: {
-		nextjs: {
-			appDirectory: true,
-		},
-	},
+	title: 'nav/Emoji',
+	component: EmojiBar,
 };
 
 export default meta;
