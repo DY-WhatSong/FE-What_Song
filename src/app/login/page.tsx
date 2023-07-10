@@ -3,6 +3,7 @@ import loginMain from '../../../public/lottie/loginMain.json';
 import Button from '@/components/button/Button';
 import PageHeaderContent from '@/components/PageHeaderContent';
 import LottieView from '@/components/LottieView';
+import EmojiBar from '@/components/bar/EmojiBar';
 
 export default function LoginPage() {
 	return (
@@ -15,6 +16,7 @@ export default function LoginPage() {
 			/>
 			<LottieView file={loginMain} />
 			<Button link={KAKAO_OAUTH2_URL} content="카카오 로그인/회원가입" bgColor="bg-[#FAE64D]" />
+			<EmojiBar />
 		</div>
 	);
 }
